@@ -1,12 +1,29 @@
 ﻿using System;
+using System.Globalization;
 
-namespace ConsoleApp1
+namespace Curso
 {
     class Program
     {
+        enum TipoConta { Conta_corrente, ContaPoupanca };
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Insira o valor do saldo inicial: ");
+            double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Conta conta = new Conta(valor);
+
+            conta.CheckSaldo();
+
+            Console.ReadKey();
+            
+
+            
+            
+            
+
+
         }
     }
 }
