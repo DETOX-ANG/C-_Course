@@ -9,6 +9,7 @@ namespace Curso {
         public string nome { get; private set;} //uma maneira de controlar se o atributo pode ser lido/alterado fora da classe
         double saldo;
         int idade;
+        int[] qtdeSaque;
 
         public Conta(double saldo) {
             this.saldo = saldo;
@@ -33,6 +34,26 @@ namespace Curso {
             //value = int.Parse(Console.ReadLine());
             saldo = this.saldo + value;
         }
+
+        public void TesteArray(int qtde) {
+            this.qtdeSaque = new int[qtde];
+
+            for (int i = 0; i < qtde; i++) {
+                Console.Write("SeqNum");
+                this.qtdeSaque[i] = int.Parse(Console.ReadLine());
+
+            }
+            for (int i = 0; i < qtde; i++) {
+                Console.WriteLine($"Numero: {this.qtdeSaque[i]}");
+
+            }
+                
+
+
+        }
+
+
+
 
     }
 }

@@ -16,6 +16,13 @@ namespace Curso
 
             conta.CheckSaldo();
 
+            Console.Write("Insira uma quantidade: ");
+            int qtde = int.Parse(Console.ReadLine());
+
+            conta.TesteArray(qtde);
+
+
+
             Console.ReadKey();
             
 
