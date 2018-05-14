@@ -9,21 +9,29 @@ namespace Curso
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Insira o valor do saldo inicial: ");
-            double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Insira o valor do saldo inicial: ");
+            //double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Conta conta = new Conta(valor);
+            //Conta conta = new Conta(valor);
 
-            conta.CheckSaldo();
+            //conta.CheckSaldo();
 
-            Console.Write("Insira uma quantidade: ");
-            int qtde = int.Parse(Console.ReadLine());
+            //Console.Write("Insira uma quantidade: ");
+            //int qtde = int.Parse(Console.ReadLine());
 
-            conta.TesteArray(qtde);
+            //conta.TesteArray(qtde);
 
 
+
+            //Console.ReadKey();
+
+            Lancamentos lcto = new Lancamentos();
+
+            lcto.inserirCredt();
+            lcto.ExibirLcto();
 
             Console.ReadKey();
+
             
 
             
