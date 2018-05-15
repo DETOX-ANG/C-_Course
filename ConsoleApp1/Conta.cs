@@ -6,7 +6,7 @@ namespace Curso {
     class Conta {
         enum TipoConta { Conta_corrente, ContaPoupanca };
 
-        public string nome { get; private set;} //uma maneira de controlar se o atributo pode ser lido/alterado fora da classe
+        public string Nome { get; private set;} //uma maneira de controlar se o atributo pode ser lido/alterado fora da classe
         double saldo;
         int idade;
         int[] qtdeSaque;
@@ -17,7 +17,7 @@ namespace Curso {
 
         public Conta(double saldo, string nome) {
             this.saldo = saldo;
-            this.nome = nome;
+            this.Nome = nome;
         }
 
 

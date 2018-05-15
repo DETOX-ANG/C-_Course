@@ -27,8 +27,11 @@ namespace Curso
 
             Lancamentos lcto = new Lancamentos();
 
-            lcto.inserirCredt();
+            lcto.InserirCredt();
             lcto.ExibirLcto();
+            lcto.InserirDebt();
+            lcto.Extrato();
+
 
             Console.ReadKey();
 
