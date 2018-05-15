@@ -47,6 +47,8 @@ namespace Curso
                 Console.WriteLine(descDebt[i]);
                 
             }
+            //Imprimir posição de um item na lista através do seu indexador Lê-se Localize X tal que(=>) X seja igual Uber
+            Console.WriteLine($"Posição do Uber: {descDebt.FindIndex(x => x == "Uber")}");
         }
 
     }
