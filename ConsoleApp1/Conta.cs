@@ -10,6 +10,7 @@ namespace Curso {
         double saldo;
         int idade;
         int[] qtdeSaque;
+        Pessoa Pessoa = new Pessoa();
 
         public Conta(double saldo) {
             this.saldo = saldo;

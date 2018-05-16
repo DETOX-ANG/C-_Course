@@ -8,9 +8,13 @@ namespace Curso
     {
         //instanciando array 2D simples
         double[,] credito = new double[3,3];
-
+        
         //Iniciar uma lista
         List<string> descDebt = new List<string>();
+
+        //Iniciar um Conjunto
+        HashSet<string> conjunto = new HashSet<string>();
+        
 
         public void InserirCredt() {
             for (int linha = 0; linha < 3; linha++) {
@@ -39,17 +43,26 @@ namespace Curso
             this.descDebt.Add("Uber");
             this.descDebt.Add("Saque 24 Horas");
             this.descDebt.Add("Presente");
+            this.conjunto.Add("Presente");
+            this.conjunto.Add("Saque 24 Horas");
+
         }
 
         public void Extrato() {
             
             for (int i = 0; i < this.descDebt.Count; i++) {
                 Console.WriteLine(descDebt[i]);
-                
+                               
             }
             //Imprimir posição de um item na lista através do seu indexador Lê-se Localize X tal que(=>) X seja igual Uber
             Console.WriteLine($"Posição do Uber: {descDebt.FindIndex(x => x == "Uber")}");
+
+            foreach (string item in conjunto) {
+                Console.WriteLine(item);
+            }
         }
+
+
 
     }
         
