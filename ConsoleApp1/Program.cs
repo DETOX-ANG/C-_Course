@@ -27,11 +27,14 @@ namespace Curso
 
             Lancamentos lcto = new Lancamentos();
 
-            lcto.InserirCredt();
-            lcto.ExibirLcto();
-            lcto.InserirDebt();
-            lcto.Extrato();
+            //lcto.InserirCredt();
+            //lcto.ExibirLcto();
+            //lcto.InserirDebt();
+            //lcto.Extrato();
 
+            Pessoa pessoa = new Pessoa("Angelo", "ang@gmail.com", 25);
+
+            Conta conta = new Conta(2500.00, pessoa);
 
             Console.ReadKey();
 
