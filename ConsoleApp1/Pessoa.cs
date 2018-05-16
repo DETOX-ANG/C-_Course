@@ -11,7 +11,7 @@ namespace Curso
         public int idade { get; set; }
 
 
-        Pessoa(string nm, string mail, int age) {
+        public Pessoa(string nm, string mail, int age) {
             this.nome = nm;
             this.email = mail;
             this.idade = age;
