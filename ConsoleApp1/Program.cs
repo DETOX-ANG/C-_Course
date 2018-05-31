@@ -35,6 +35,7 @@ namespace CursoUdemyC {
             Pessoa pessoa = new Pessoa("Angelo", "ang@gmail.com", 25);
             Utilities.AppInfo();
 
+            //Tratando uma excessão
             try {
                 conta.Saque(250.00);
             }
