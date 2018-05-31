@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CursoUdemyC
     {
-    class Lancamentos
+    class Lancamentos : Exception
     {
         //instanciando array 2D simples
         double[,] credito = new double[3,3];
@@ -14,7 +14,12 @@ namespace CursoUdemyC
 
         //Iniciar um Conjunto
         HashSet<string> conjunto = new HashSet<string>();
-        
+
+        public Lancamentos(string mensagem) : base(mensagem) {
+
+        }
+
+        public Lancamentos() { }
 
         public void InserirCredt() {
             for (int linha = 0; linha < 3; linha++) {
@@ -57,6 +62,7 @@ namespace CursoUdemyC
             //Imprimir posição de um item na lista através do seu indexador Lê-se Localize X tal que(=>) X seja igual Uber
             Console.WriteLine($"Posição do Uber: {descDebt.FindIndex(x => x == "Uber")}");
 
+            //imprimir todos os itens de uma lista
             foreach (string item in conjunto) {
                 Console.WriteLine(item);
             }

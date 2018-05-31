@@ -14,6 +14,11 @@ namespace CursoUdemyC
         }
 
         public override void Saque(double value) {
+            if (value > this.saldo) {
+                throw new Operacao("Saquel maior que saldo existente");
+
+            }
+
             this.saldo = this.saldo - value;
             
         }

@@ -4,11 +4,12 @@ using System.Text;
 
 namespace CursoUdemyC {
     abstract class Conta {
-        enum TipoConta { Conta_corrente, ContaPoupanca };
 
+        
         //Propriedade
         public string Nome { get; private set;} //uma maneira de controlar se o atributo pode ser lido/alterado fora da classe
         public double saldo;// Field
+        public double limite;
         int idade;
         int[] qtdeSaque;//Array
         public Pessoa Pessoa { get; private set; } // Propriedade

@@ -8,10 +8,11 @@ namespace CursoUdemyC {
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Insira o valor do saldo inicial: ");
-            //double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Insira o valor do saldo inicial: ");
+            double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            //Conta conta = new Conta(valor);
+            Conta conta = new ContaCorrente(valor, "Angelo");
+             
 
             //conta.CheckSaldo();
 
@@ -34,6 +35,14 @@ namespace CursoUdemyC {
             Pessoa pessoa = new Pessoa("Angelo", "ang@gmail.com", 25);
             Utilities.AppInfo();
 
+            try {
+                conta.Saque(250.00);
+            }
+            catch (Operacao e) {
+
+                Console.WriteLine(e.Message); 
+            }
+            
             Console.ReadKey();
 
             
