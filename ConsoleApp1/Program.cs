@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Curso
-{
+namespace CursoUdemyC {
     class Program
     {
         enum TipoConta { Conta_corrente, ContaPoupanca };
@@ -33,8 +32,7 @@ namespace Curso
             //lcto.Extrato();
 
             Pessoa pessoa = new Pessoa("Angelo", "ang@gmail.com", 25);
-
-            Conta conta = new Conta(2500.00, pessoa);
+            Utilities.AppInfo();
 
             Console.ReadKey();
 

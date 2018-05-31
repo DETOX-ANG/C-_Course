@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Curso
-{
+namespace CursoUdemyC
+    {
     class Lancamentos
     {
         //instanciando array 2D simples

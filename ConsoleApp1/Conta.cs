@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Curso {
-    class Conta {
+namespace CursoUdemyC {
+    abstract class Conta {
         enum TipoConta { Conta_corrente, ContaPoupanca };
 
+        //Propriedade
         public string Nome { get; private set;} //uma maneira de controlar se o atributo pode ser lido/alterado fora da classe
-        double saldo;
+        public double saldo;// Field
         int idade;
-        int[] qtdeSaque;
-        public Pessoa Pessoa { get; private set; }
+        int[] qtdeSaque;//Array
+        public Pessoa Pessoa { get; private set; } // Propriedade
 
         public Conta(double saldo, Pessoa pessoa) {
             this.saldo = saldo;
@@ -21,15 +22,13 @@ namespace Curso {
             this.Nome = nome;
         }
 
+        
 
         public void CheckSaldo() {
             Console.WriteLine($"Seu saldo é: {saldo}");
         }
 
-        public void Saque(double value) {
-            //value = int.Parse(Console.ReadLine());
-            saldo = this.saldo - value;
-        }
+        public abstract void Saque(double value);
 
         public void Deposito(double value) {
             //value = int.Parse(Console.ReadLine());

@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Curso
-{
+namespace CursoUdemyC
+    {
     class Pessoa
     {
-        public string nome { get; set; }
-        public string email { get; set; }
-        public int idade { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public int Idade { get; set; }
 
 
         public Pessoa(string nm, string mail, int age) {
-            this.nome = nm;
-            this.email = mail;
-            this.idade = age;
+            this.Nome = nm;
+            this.Email = mail;
+            this.Idade = age;
 
         }
 
         public override string ToString() {
-            return $"Dados dos cliente: {this.nome}, \n {this.email}, \n {this.idade}"; 
+            return $"Dados dos cliente: {this.Nome}, \n {this.Email}, \n {this.Idade}"; 
         }
     }
 }
